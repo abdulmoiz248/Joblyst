@@ -4,10 +4,15 @@ import numpy as np
 import logging
 import re
 import time
+import os
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer
 from urllib.parse import quote_plus, urljoin
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
 logging.info("starting joblyst")
@@ -29,7 +34,10 @@ with open("config.json", encoding="utf-8") as f:
 allowedRoles = [r.lower() for r in config["allowedRoles"]]
 allowedLocations = [l.lower() for l in config["allowedLocations"]]
 minScore = config.get("minScore", 40)
-discordWebhook = config["discordWebhook"]
+discordWebhook = os.getenv("DISCORD_WEBHOOK")
+
+if not discordWebhook:
+    raise ValueError("DISCORD_WEBHOOK environment variable not set")
 
 # Prepare CV skills list once - handle both formats
 cvSkills = []

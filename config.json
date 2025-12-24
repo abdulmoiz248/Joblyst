@@ -1,0 +1,24 @@
+{
+  "minScore": 30,
+  "allowedLocations": ["lahore", "remote"],
+  "allowedRoles": [
+    "associate software engineer",
+    "ase",
+    "junior",
+    "fresh",
+    "graduate",
+    "intern",
+    "trainee",
+    "software engineer",
+    "developer",
+    "python",
+    "frontend",
+    "backend",
+    "full stack",
+    "web developer",
+    "ml engineer",
+    "mern",
+    "frontend developer"
+
+  ]
+}
