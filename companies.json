@@ -1,0 +1,56 @@
+{
+  "companies": [
+    {
+      "name": "Arbisoft",
+      "careerPage": "https://arbisoft.com/careers"
+    },
+    {
+      "name": "Devsinc",
+      "careerPage": "https://devsinc.com/careers"
+    },
+    {
+      "name": "Systems Limited",
+      "careerPage": "https://www.systemsltd.com/careers"
+    },
+    {
+      "name": "10Pearls",
+      "careerPage": "https://10pearls.com/careers/"
+    },
+    {
+      "name": "Netsol Technologies",
+      "careerPage": "https://www.netsoltech.com/careers"
+    },
+    {
+      "name": "VentureDive",
+      "careerPage": "https://www.venturedive.com/careers/"
+    },
+    {
+      "name": "Contour Software",
+      "careerPage": "https://www.contoursoftware.com/careers"
+    },
+    {
+      "name": "Techlogix",
+      "careerPage": "https://www.techlogix.com/careers/"
+    },
+    {
+      "name": "i2c Inc",
+      "careerPage": "https://www.i2cinc.com/careers/"
+    },
+    {
+      "name": "Folio3",
+      "careerPage": "https://www.folio3.com/careers"
+    },
+    {
+      "name": "Tkxel",
+      "careerPage": "https://www.tkxel.com/careers/"
+    },
+    {
+      "name": "Nextbridge",
+      "careerPage": "https://www.nextbridge.pk/careers/"
+    },
+    {
+      "name": "Afiniti",
+      "careerPage": "https://www.afiniti.com/careers"
+    }
+  ]
+}
