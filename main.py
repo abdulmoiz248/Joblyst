@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer
 from urllib.parse import quote_plus, urljoin
 from dotenv import load_dotenv
+from job_history import JobHistory
 
 # Load environment variables
 load_dotenv()
@@ -53,8 +54,8 @@ if "skills" in cv:
             if isinstance(keywords, list):
                 cvSkills.extend([k.lower() for k in keywords])
 
-# Store seen jobs to avoid duplicates
-seenJobs = set()
+# Initialize job history tracker (stores jobs for 7 days)
+jobHistory = JobHistory(history_file="sent_jobs_history.json", retention_days=7)
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -358,11 +359,11 @@ def scoreJobHybrid(job, cvEmbedding, cvSkills):
 
 
 def sendToDiscord(job, score):
-    if job["id"] in seenJobs:
-        logging.info(f"already sent -> {job['title']}")
+    if jobHistory.is_sent(job["id"]):
+        logging.info(f"already sent -> {job['title']} (within {jobHistory.retention_days} days)")
         return
     
-    seenJobs.add(job["id"])
+    jobHistory.mark_as_sent(job["id"])
     desc = job['description'][:400] + "..." if len(job['description']) > 400 else job['description']
     if not desc:
         desc = "No description available"
@@ -500,6 +501,11 @@ def runJoblyst():
     logging.info(f"JOBLYST RUN STARTED at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logging.info("=" * 60)
     
+    # Clean up old job entries (older than retention period)
+    removed_count = jobHistory.cleanup_old_entries()
+    stats = jobHistory.get_stats()
+    logging.info(f"Job history stats: {stats['total_jobs']} jobs tracked, {removed_count} old entries removed")
+    
     allJobs = []
     allJobs.extend(scrapeLinkedIn())
     allJobs.extend(scrapeCompanyPages())
@@ -511,7 +517,8 @@ def runJoblyst():
     
     matchedJobs = 0
     for job in allJobs:
-        if job["id"] in seenJobs:
+        if jobHistory.is_sent(job["id"]):
+            logging.debug(f"skipping already sent job: {job['title']}")
             continue
         
         # Apply all filters BEFORE scoring to save computation
