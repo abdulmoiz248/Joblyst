@@ -32,6 +32,14 @@ jobs:
       run: |
         python main.py
         
+    - name: Commit job history back to repo
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add sent_jobs_history.json
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update job history [skip ci]"
+        git push
+        
     - name: Log completion
       run: |
         echo "Job scraper completed at $(date)"
