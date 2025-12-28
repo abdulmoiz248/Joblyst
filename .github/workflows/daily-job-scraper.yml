@@ -10,6 +10,8 @@ on:
 jobs:
   scrape-jobs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allow pushing changes back to repo
     
     steps:
     - name: Checkout repository
@@ -38,7 +40,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git add sent_jobs_history.json
         git diff --quiet && git diff --staged --quiet || git commit -m "Update job history [skip ci]"
-        git push
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
         
     - name: Log completion
       run: |
