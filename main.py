@@ -7,11 +7,14 @@ from datetime import datetime
 
 from dotenv import load_dotenv
 
+import firecrawl_rotation
 import freshness
 import scoring
 from job_history import JobHistory
 from notifier import sendToDiscord
 from sources import ashby, firecrawl_source, greenhouse, lever, linkedin
+
+FIRECRAWL_ROTATION_STATE_FILE = "firecrawl_rotation_state.json"
 
 load_dotenv()
 
@@ -30,6 +33,8 @@ with open("config.json", encoding="utf-8") as f:
 allowedRoles = [r.lower() for r in config["allowedRoles"]]
 minScore = config.get("minScore", 40)
 experienceMaxYears = config.get("experienceMaxYears", 2)
+maxDailyNotifications = config.get("maxDailyNotifications", 20)
+firecrawlCallsPerRun = config.get("firecrawlCallsPerRun", 5)
 discordWebhook = os.getenv("DISCORD_WEBHOOK")
 
 if not discordWebhook:
@@ -139,7 +144,10 @@ def gatherJobs():
     jobs = []
     jobs.extend(linkedin.fetch_jobs())
 
-    for c in companies:
+    atsCompanies = [c for c in companies if c.get("source") in ("greenhouse", "lever", "ashby")]
+    firecrawlCompanies = [c for c in companies if c.get("source") == "firecrawl"]
+
+    for c in atsCompanies:
         source = c.get("source")
         try:
             if source == "greenhouse":
@@ -148,10 +156,20 @@ def gatherJobs():
                 jobs.extend(lever.fetch_jobs(c["id"], c["name"]))
             elif source == "ashby":
                 jobs.extend(ashby.fetch_jobs(c["id"], c["name"]))
-            elif source == "firecrawl":
-                jobs.extend(firecrawl_source.fetch_jobs(c["name"], c["careerPage"]))
-            else:
-                logging.warning(f"unknown source '{source}' for {c['name']}")
+        except Exception as e:
+            logging.warning(f"source error for {c['name']}: {e}")
+            continue
+
+    # Firecrawl bills per scrape, unlike the free ATS APIs above - only scrape a
+    # rotating batch each run instead of every custom career page every day.
+    firecrawlBatch = firecrawl_rotation.nextBatch(
+        firecrawlCompanies, FIRECRAWL_ROTATION_STATE_FILE, firecrawlCallsPerRun)
+    logging.info(
+        f"firecrawl rotation: scraping {len(firecrawlBatch)}/{len(firecrawlCompanies)} "
+        f"companies this run: {[c['name'] for c in firecrawlBatch]}")
+    for c in firecrawlBatch:
+        try:
+            jobs.extend(firecrawl_source.fetch_jobs(c["name"], c["careerPage"]))
         except Exception as e:
             logging.warning(f"source error for {c['name']}: {e}")
             continue
@@ -175,7 +193,7 @@ def runJoblyst():
         logging.warning("No jobs found! Check your internet connection or if sites are blocking.")
         return
 
-    matchedJobs = 0
+    candidates = []
     for job in allJobs:
         if jobHistory.is_sent(job["id"]):
             logging.debug(f"skipping already sent job: {job['title']}")
@@ -194,12 +212,22 @@ def runJoblyst():
 
         score = scoring.scoreJobHybrid(job, cvEmbedding, cvSkills)
         if score >= minScore:
-            sendToDiscord(job, score, discordWebhook)
-            jobHistory.mark_as_sent(job["id"])
-            matchedJobs += 1
-            time.sleep(2)
+            candidates.append((score, job))
         else:
             logging.info(f"score rejected -> {job['title']} = {score}%")
+
+    candidates.sort(key=lambda pair: pair[0], reverse=True)
+    topCandidates = candidates[:maxDailyNotifications]
+    logging.info(
+        f"{len(candidates)} jobs matched minScore, sending top {len(topCandidates)} "
+        f"(daily cap: {maxDailyNotifications})")
+
+    matchedJobs = 0
+    for score, job in topCandidates:
+        sendToDiscord(job, score, discordWebhook)
+        jobHistory.mark_as_sent(job["id"])
+        matchedJobs += 1
+        time.sleep(2)
 
     logging.info("=" * 60)
     logging.info(f"JOBLYST RUN COMPLETED - Matched jobs sent: {matchedJobs}")

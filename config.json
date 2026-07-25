@@ -2,6 +2,8 @@
   "minScore": 30,
   "maxJobAgeDays": 21,
   "experienceMaxYears": 2,
+  "maxDailyNotifications": 20,
+  "firecrawlCallsPerRun": 5,
   "allowedRoles": [
     "associate software engineer",
     "ase",
@@ -20,6 +22,7 @@
     "web developer",
     "ml engineer",
     "mern",
+     "ai engineer",
     "frontend developer"
   ]
 }
