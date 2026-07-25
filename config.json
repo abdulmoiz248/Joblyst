@@ -1,12 +1,14 @@
 {
   "minScore": 30,
-  "allowedLocations": ["lahore", "remote"],
+  "maxJobAgeDays": 21,
+  "experienceMaxYears": 2,
   "allowedRoles": [
     "associate software engineer",
     "ase",
     "junior",
     "fresh",
     "graduate",
+    "new grad",
     "intern",
     "trainee",
     "software engineer",
@@ -19,6 +21,5 @@
     "ml engineer",
     "mern",
     "frontend developer"
-
   ]
 }

@@ -1,116 +1,97 @@
 {
   "companies": [
-    {
-      "name": "Arbisoft",
-      "careerPage": "https://arbisoft.com/careers"
-    },
-    {
-      "name": "Devsinc",
-      "careerPage": "https://devsinc.com/careers"
-    },
-    {
-      "name": "Systems Limited",
-      "careerPage": "https://www.systemsltd.com/careers"
-    },
-    {
-      "name": "10Pearls",
-      "careerPage": "https://10pearls.com/careers/"
-    },
-    {
-      "name": "Netsol Technologies",
-      "careerPage": "https://www.netsoltech.com/careers"
-    },
-    {
-      "name": "VentureDive",
-      "careerPage": "https://www.venturedive.com/careers/"
-    },
-    {
-      "name": "Contour Software",
-      "careerPage": "https://www.contoursoftware.com/careers"
-    },
-    {
-      "name": "Techlogix",
-      "careerPage": "https://www.techlogix.com/careers/"
-    },
-    {
-      "name": "i2c Inc",
-      "careerPage": "https://www.i2cinc.com/careers/"
-    },
-    {
-      "name": "Folio3",
-      "careerPage": "https://www.folio3.com/careers"
-    },
-    {
-      "name": "Tkxel",
-      "careerPage": "https://www.tkxel.com/careers/"
-    },
-    {
-      "name": "Nextbridge",
-      "careerPage": "https://www.nextbridge.pk/careers/"
-    },
-    {
-      "name": "Afiniti",
-      "careerPage": "https://www.afiniti.com/careers"
-    },
-    {
-      "name": "IBEX Global",
-      "careerPage": "https://www.ibex.co/careers/"
-    },
-    {
-      "name": "TRG (The Resource Group)",
-      "careerPage": "https://www.trg.com.pk/careers/"
-    },
-    {
-      "name": "Inbox Business Technologies",
-      "careerPage": "https://www.inboxbiz.com/careers/"
-    },
-    {
-      "name": "Ovex Technologies",
-      "careerPage": "https://ovextech.com/careers/"
-    },
-    {
-      "name": "Mentor Graphics",
-      "careerPage": "https://www.mentor.com/careers/"
-    },
-    {
-      "name": "Confiz",
-      "careerPage": "https://www.confiz.com/careers/"
-    },
-    {
-      "name": "Genetech Solutions",
-      "careerPage": "https://www.genetechsolutions.com/careers/"
-    },
-    {
-      "name": "S&P Global",
-      "careerPage": "https://www.spglobal.com/en/careers/"
-    },
-    {
-      "name": "Codup",
-      "careerPage": "https://codup.io/careers/"
-    },
-    {
-      "name": "Teradata",
-      "careerPage": "https://www.teradata.com/careers/"
-    },
-    {
-      "name": "Recurship",
-      "careerPage": "https://www.nisum.com/careers/careers-pakistan#filter=.pakistan"
-    },
-    {
-      "name": "Nisum",
-      "careerPage": "https://www.nisum.com/careers/"
-    },
-    {
-      "name": "Emumba",
-      "careerPage": "https://www.emumba.com/careers/"
-    },
-    {
-      "name": "Zeeshan Technologies",
-      "careerPage": "https://www.zeeshantech.com/careers/"
-    },
-    {
-      "name": "Caremerge",
-      "careerPage": "https://www.caremerge.com/careers/"
-    }
+    { "name": "Anthropic", "source": "greenhouse", "id": "anthropic" },
+    { "name": "Stripe", "source": "greenhouse", "id": "stripe" },
+    { "name": "Airbnb", "source": "greenhouse", "id": "airbnb" },
+    { "name": "Coinbase", "source": "greenhouse", "id": "coinbase" },
+    { "name": "GitLab", "source": "greenhouse", "id": "gitlab" },
+    { "name": "Figma", "source": "greenhouse", "id": "figma" },
+    { "name": "Databricks", "source": "greenhouse", "id": "databricks" },
+    { "name": "Scale AI", "source": "greenhouse", "id": "scaleai" },
+    { "name": "Reddit", "source": "greenhouse", "id": "reddit" },
+    { "name": "Robinhood", "source": "greenhouse", "id": "robinhood" },
+    { "name": "Discord", "source": "greenhouse", "id": "discord" },
+    { "name": "Brex", "source": "greenhouse", "id": "brex" },
+    { "name": "Asana", "source": "greenhouse", "id": "asana" },
+    { "name": "Dropbox", "source": "greenhouse", "id": "dropbox" },
+    { "name": "Cloudflare", "source": "greenhouse", "id": "cloudflare" },
+    { "name": "Elastic", "source": "greenhouse", "id": "elastic" },
+    { "name": "MongoDB", "source": "greenhouse", "id": "mongodb" },
+    { "name": "Twilio", "source": "greenhouse", "id": "twilio" },
+    { "name": "Affirm", "source": "greenhouse", "id": "affirm" },
+    { "name": "Instacart", "source": "greenhouse", "id": "instacart" },
+    { "name": "Pinterest", "source": "greenhouse", "id": "pinterest" },
+    { "name": "Squarespace", "source": "greenhouse", "id": "squarespace" },
+    { "name": "Gusto", "source": "greenhouse", "id": "gusto" },
+    { "name": "Samsara", "source": "greenhouse", "id": "samsara" },
+    { "name": "Webflow", "source": "greenhouse", "id": "webflow" },
+    { "name": "Calendly", "source": "greenhouse", "id": "calendly" },
+    { "name": "Remote", "source": "greenhouse", "id": "remote" },
+    { "name": "Monzo", "source": "greenhouse", "id": "monzo" },
+    { "name": "N26", "source": "greenhouse", "id": "n26" },
+    { "name": "Duolingo", "source": "greenhouse", "id": "duolingo" },
+    { "name": "Datadog", "source": "greenhouse", "id": "datadog" },
+    { "name": "New Relic", "source": "greenhouse", "id": "newrelic" },
+    { "name": "PagerDuty", "source": "greenhouse", "id": "pagerduty" },
+    { "name": "Amplitude", "source": "greenhouse", "id": "amplitude" },
+    { "name": "Mixpanel", "source": "greenhouse", "id": "mixpanel" },
+    { "name": "Intercom", "source": "greenhouse", "id": "intercom" },
+    { "name": "Upstart", "source": "greenhouse", "id": "upstart" },
+    { "name": "Carta", "source": "greenhouse", "id": "carta" },
+
+    { "name": "Linear", "source": "ashby", "id": "linear" },
+    { "name": "Ramp", "source": "ashby", "id": "ramp" },
+    { "name": "Notion", "source": "ashby", "id": "notion" },
+    { "name": "Benchling", "source": "ashby", "id": "benchling" },
+    { "name": "Zapier", "source": "ashby", "id": "zapier" },
+    { "name": "OpenAI", "source": "ashby", "id": "openai" },
+    { "name": "Supabase", "source": "ashby", "id": "supabase" },
+    { "name": "PostHog", "source": "ashby", "id": "posthog" },
+    { "name": "Watershed", "source": "ashby", "id": "watershed" },
+    { "name": "Replit", "source": "ashby", "id": "replit" },
+    { "name": "Modal", "source": "ashby", "id": "modal" },
+    { "name": "Cohere", "source": "ashby", "id": "cohere" },
+    { "name": "Vanta", "source": "ashby", "id": "vanta" },
+    { "name": "Attio", "source": "ashby", "id": "attio" },
+    { "name": "Cursor", "source": "ashby", "id": "cursor" },
+    { "name": "Mercor", "source": "ashby", "id": "mercor" },
+    { "name": "Eight Sleep", "source": "ashby", "id": "eightsleep" },
+    { "name": "Hightouch", "source": "ashby", "id": "hightouch" },
+    { "name": "Stytch", "source": "ashby", "id": "stytch" },
+    { "name": "Temporal", "source": "ashby", "id": "temporal" },
+
+    { "name": "Micro1", "source": "firecrawl", "careerPage": "https://www.micro1.ai/experts/opportunities" },
+    { "name": "Google", "source": "firecrawl", "careerPage": "https://www.google.com/about/careers/applications/jobs/results/" },
+    { "name": "Microsoft", "source": "firecrawl", "careerPage": "https://jobs.careers.microsoft.com/global/en/search" },
+    { "name": "Amazon", "source": "firecrawl", "careerPage": "https://www.amazon.jobs/en/search?base_query=software+engineer" },
+
+    { "name": "Arbisoft", "source": "firecrawl", "careerPage": "https://arbisoft.com/careers" },
+    { "name": "Devsinc", "source": "firecrawl", "careerPage": "https://devsinc.com/careers" },
+    { "name": "Systems Limited", "source": "firecrawl", "careerPage": "https://www.systemsltd.com/careers" },
+    { "name": "10Pearls", "source": "firecrawl", "careerPage": "https://10pearls.com/careers/" },
+    { "name": "Netsol Technologies", "source": "firecrawl", "careerPage": "https://www.netsoltech.com/careers" },
+    { "name": "VentureDive", "source": "firecrawl", "careerPage": "https://www.venturedive.com/careers/" },
+    { "name": "Contour Software", "source": "firecrawl", "careerPage": "https://www.contoursoftware.com/careers" },
+    { "name": "Techlogix", "source": "firecrawl", "careerPage": "https://www.techlogix.com/careers/" },
+    { "name": "i2c Inc", "source": "firecrawl", "careerPage": "https://www.i2cinc.com/careers/" },
+    { "name": "Folio3", "source": "firecrawl", "careerPage": "https://www.folio3.com/careers" },
+    { "name": "Tkxel", "source": "firecrawl", "careerPage": "https://www.tkxel.com/careers/" },
+    { "name": "Nextbridge", "source": "firecrawl", "careerPage": "https://www.nextbridge.pk/careers/" },
+    { "name": "Afiniti", "source": "firecrawl", "careerPage": "https://www.afiniti.com/careers" },
+    { "name": "IBEX Global", "source": "firecrawl", "careerPage": "https://www.ibex.co/careers/" },
+    { "name": "TRG (The Resource Group)", "source": "firecrawl", "careerPage": "https://www.trg.com.pk/careers/" },
+    { "name": "Inbox Business Technologies", "source": "firecrawl", "careerPage": "https://www.inboxbiz.com/careers/" },
+    { "name": "Ovex Technologies", "source": "firecrawl", "careerPage": "https://ovextech.com/careers/" },
+    { "name": "Mentor Graphics", "source": "firecrawl", "careerPage": "https://www.mentor.com/careers/" },
+    { "name": "Confiz", "source": "firecrawl", "careerPage": "https://www.confiz.com/careers/" },
+    { "name": "Genetech Solutions", "source": "firecrawl", "careerPage": "https://www.genetechsolutions.com/careers/" },
+    { "name": "S&P Global", "source": "firecrawl", "careerPage": "https://www.spglobal.com/en/careers/" },
+    { "name": "Codup", "source": "firecrawl", "careerPage": "https://codup.io/careers/" },
+    { "name": "Teradata", "source": "firecrawl", "careerPage": "https://www.teradata.com/careers/" },
+    { "name": "Recurship", "source": "firecrawl", "careerPage": "https://www.nisum.com/careers/careers-pakistan#filter=.pakistan" },
+    { "name": "Nisum", "source": "firecrawl", "careerPage": "https://www.nisum.com/careers/" },
+    { "name": "Emumba", "source": "firecrawl", "careerPage": "https://www.emumba.com/careers/" },
+    { "name": "Zeeshan Technologies", "source": "firecrawl", "careerPage": "https://www.zeeshantech.com/careers/" },
+    { "name": "Caremerge", "source": "firecrawl", "careerPage": "https://www.caremerge.com/careers/" }
   ]
 }

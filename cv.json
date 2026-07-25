@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Abdul Moiz",
-    "headline": "Aspiring Software Engineer | Web, AI/ML & Automation Focused",
+    "headline": "Full Stack & Machine Learning Engineer",
     "email": "moiz20920@gmail.com",
     "phone": "+923080485737",
     "website": "https://abdul-moiz-b419.vercel.app/",
     "location": "Lahore"
   },
-  "summary": "Full-stack developer and AI specialist building sleek, scalable digital systems. Experienced in NestJS, Next.js, MongoDB, Python, and AI/ML pipelines. Skilled in turning complex ideas into production-ready solutions, with a passion for experimentation and innovation.",
+  "summary": "Full-stack developer and AI specialist building sleek, scalable digital systems. Experienced in NestJS, Next.js, MongoDB, Python, and AI/ML pipelines, with production experience across frontend, backend, and applied AI. Skilled in turning complex ideas into production-ready solutions, with a passion for experimentation, automation, and innovation. COMSATS Computer Science graduate now working as an Associate Software Engineer, open to global remote and on-site opportunities.",
   "skills": [
     "Full Stack Development",
     "Database",
@@ -16,18 +16,18 @@
     "Object Oriented Programming",
     "RAG",
     "DevOps",
-    "Next Js",
-    "Nest JS",
+    "Next.js",
+    "NestJS",
     "TypeScript",
     "JavaScript",
     "Python",
     "Java",
-    "Next.js",
+    "C++",
     "React",
     "Tailwind CSS",
-    "NestJS",
     "FastAPI",
     "Redux",
+    "Zustand",
     "Relational Databases",
     "Non-Relational Databases",
     "Vector Databases (FAISS, Qdrant)",
@@ -37,14 +37,55 @@
     "Transfer Learning",
     "NLP",
     "Git",
+    "GitHub",
     "Docker",
     "Google OAuth",
     "Supabase",
-    "Cloudinary"
+    "Cloudinary",
+    "HTML5",
+    "CSS3",
+    "Vite",
+    "Node.js",
+    "Express.js",
+    "Django",
+    "Prisma",
+    "MongoDB",
+    "PostgreSQL",
+    "SQL",
+    "SQLite",
+    "MySQL",
+    "PyTorch",
+    "TensorFlow",
+    "OpenAI",
+    "Claude",
+    "Google Gemini",
+    "Groq",
+    "LangChain",
+    "LangGraph",
+    "Hugging Face",
+    "scikit-learn",
+    "OpenCV",
+    "Vercel",
+    "Netlify",
+    "Figma",
+    "Postman",
+    "Notion",
+    "Canva",
+    "Socket.io",
+    "GitHub Actions",
+    "MCP"
   ],
   "experience": [
   {
-   
+    "title": "Associate Software Engineer",
+    "company": "Devsinc",
+    "period": "January 2026 - Present",
+    "description":
+      "Applying AI and core CS concepts to scalable software engineering projects, with hands-on work across LLM integration, frontend, backend, and AI/ML systems.",
+    "technologies": ["JavaScript", "TypeScript", "LLM", "Frontend", "Backend", "AI/ML"]
+  },
+  {
+
     "title": "IT Team Member",
     "company": "IEEE RAS Society",
     "period": "2022 - 2023",
@@ -53,7 +94,7 @@
     "technologies": ["HTML", "CSS", "Event Management"]
   },
   {
-   
+
     "title": "Co-founder",
     "company": "Zero Limit Apparel",
     "period": "2024 - 2025",
@@ -62,7 +103,7 @@
     "technologies": ["Next.js", "React", "MongoDB", "Start-up Leadership"]
   },
   {
-   
+
     "title": "Private Tutor",
     "company": "Free Lancing",
     "period": "2024 - 2025",
@@ -71,7 +112,7 @@
     "technologies": ["Operating Systems", "Data Structures", "OOP", "Java"]
   },
 {
- 
+
   "title": "AI Intern",
   "company": "Blunder Bot Technologies",
   "period": "June, 2025 - August, 2025",
@@ -79,7 +120,7 @@
   "technologies": ["RAG", "NLP", "AI Reports", "Sentiment Analysis", "Python"]
 },
 {
- 
+
   "title": "Associate Software Engineer Intern",
   "company": "Axtra Studios",
   "period": "July, 2025 - November, 2025",
@@ -93,7 +134,7 @@
     {
       "institution": "COMSATS",
       "degree": "Bachelor’s degree in Computer Science",
-      "date": "Sept,2022 - Present"
+      "date": "Sept,2022 - 2026 (Graduated, CGPA 3.37)"
     },
     {
       "institution": "PGC",
@@ -107,16 +148,37 @@
     }
   ],
   "projects":  [
- 
+
   {
     "title": "Tasks by AION",
     "description": "AI-Powered Automation Platform",
     "fullDescription":
       "Aion Tasks is an AI-powered automation platform built to streamline documentation, research, and productivity workflows. The system allows users to upload document templates and dynamically generate content using AI, create on-brand AI-generated slide decks, intelligently expand spreadsheets with pattern detection, and run advanced research that delivers instant insights via webhooks. It integrates multiple AI engines to deliver faster, smarter task execution with a focus on automation at scale.",
-   
+
     "techStack": ["React", "Netlify", "OpenAI", "Claude", "Perplexity"],
     "githubUrl": "",
     "deployedUrl": "https://tasks.go-aion.com/login",
+    "category": "ai"
+  },
+  {
+    "title": "TechRadar Agent",
+    "description": "Agentic research system for the energy-systems and AI-infrastructure domain",
+    "fullDescription": "An agentic research system that autonomously scans, retrieves, and synthesizes developments across the energy-systems and AI-infrastructure domain, using a vector store for retrieval and MCP for tool orchestration.",
+    "techStack": ["Python", "ChromaDB", "MCP"],
+    "category": "ai"
+  },
+  {
+    "title": "AI Resume Screener",
+    "description": "Platform leveraging Gemini to evaluate, rank, and contact job applicants",
+    "fullDescription": "A recruiting platform that uses Gemini to evaluate incoming resumes against a job description, rank applicants, and automate candidate outreach, built on a FastAPI backend with a React frontend.",
+    "techStack": ["FastAPI", "SQLModel", "React"],
+    "category": "ai"
+  },
+  {
+    "title": "Voice Agent",
+    "description": "Linux-native AI voice dictation assistant with fully local transcription",
+    "fullDescription": "A Linux-native voice dictation assistant that transcribes speech fully locally using Faster-Whisper, with Groq API used for downstream reasoning/formatting.",
+    "techStack": ["Python", "Faster-Whisper", "Groq API"],
     "category": "ai"
   },
   {
@@ -130,7 +192,55 @@
     "deployedUrl": "https://zero-limit.vercel.app",
     "category": "web"
   },
-  
+  {
+    "title": "Fuel Route Optimizer",
+    "description": "Django REST API that finds the cheapest fuel stops along a US road trip",
+    "fullDescription": "A Django REST API that plans the cheapest fuel stops along a US road trip route, combining routing data from OSRM with fuel price data to optimize total trip cost.",
+    "techStack": ["Django", "Django REST Framework", "OSRM"],
+    "category": "web"
+  },
+  {
+    "title": "Hygieia",
+    "description": "AI-driven diagnostics, a LangGraph medical chatbot, and Fitbit-integrated fitness tracking",
+    "fullDescription": "A healthcare platform combining AI-driven diagnostics, a LangGraph-powered medical chatbot, and Fitbit-integrated fitness tracking across a microservices architecture.",
+    "techStack": ["LangGraph", "Microservices", "Python"],
+    "category": "ai"
+  },
+  {
+    "title": "Fynix",
+    "description": "All-in-one personal finance, investing, and accounting app built for clarity and control",
+    "fullDescription": "An all-in-one personal finance, investing, and accounting app designed for clarity and control over day-to-day and long-term finances.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "category": "web"
+  },
+  {
+    "title": "BetterEveryday",
+    "description": "Personal growth OS with streak tracking, skill/project workflows, and AI weekly reviews",
+    "fullDescription": "A personal growth operating system featuring streak tracking, skill and project workflows, and AI-generated weekly reviews of progress.",
+    "techStack": ["Next.js", "Supabase", "TypeScript"],
+    "category": "web"
+  },
+  {
+    "title": "ProtoML",
+    "description": "System discovering, scoring, and summarizing recent machine learning papers",
+    "fullDescription": "A system that discovers recent machine learning papers via the arXiv API, scores them for relevance, and generates concise AI-written summaries.",
+    "techStack": ["Python", "arXiv API", "Groq API"],
+    "category": "ai"
+  },
+  {
+    "title": "Creator Analytics Dashboard",
+    "description": "Real-time YouTube creator analytics dashboard for brand partnership teams",
+    "fullDescription": "A real-time analytics dashboard tracking YouTube creator performance metrics, built for brand partnership teams evaluating creator collaborations.",
+    "techStack": ["FastAPI", "React", "TypeScript"],
+    "category": "web"
+  },
+  {
+    "title": "Weather Forecast Tracker",
+    "description": "Dockerized service that tracks how NWS forecasts drift over time",
+    "fullDescription": "A dockerized backend service that repeatedly samples National Weather Service forecasts to track and visualize how forecast accuracy drifts over time.",
+    "techStack": ["Python", "FastAPI", "SQLAlchemy"],
+    "category": "web"
+  },
   {
     "title": "Personal Assistant",
     "description":
@@ -148,7 +258,7 @@
   "fullDescription":
     "Fear Insight is a faith‑driven streetwear brand, offering premium quality clothing that blends fashion with spiritual inspiration and bold self‑expression. The platform allows users to browse and shop a curated collection of apparel. Built with Next.js and backed by modern web tech, the store emphasises quality fabrics, meaningful brand messaging, and a seamless shopping experience.",
   "imageUrl": "/fearinsight.png",
-  "techStack": ["Next.js", "TailwindCSS", "TypeScript", "Supabase"], 
+  "techStack": ["Next.js", "TailwindCSS", "TypeScript", "Supabase"],
 
   "deployedUrl": "https://fearinsight.com/",
   "category": "web"
@@ -174,26 +284,46 @@
   "githubUrl": "https://github.com/abdulmoiz248/Insightify",
   "category": "automation"
 },
-   {
-    "title": "Github-Agent",
-    "description": "AI Agents that generate and push readme files for my repos",
-    "fullDescription":
-      "An intelligent AI-powered agent designed to analyze GitHub repositories and streamline project management. It automatically detects the tech stack and core functionality of any project, generates a detailed README.md file, and publishes it on GitHub. The agent simplifies documentation, ensures consistency across projects, and saves developers significant time.",
-    "imageUrl": "/agent.png",
-    "techStack": ["NextJs", "React", "TypeScript", "Gemini Api"],
-    "githubUrl": "https://github.com/abdulmoiz248/Github-Agent",
-    "category": "web"
+  {
+    "title": "Rewise",
+    "description": "AI revision bot that turns Notion notes into spaced-repetition MCQs",
+    "fullDescription": "An AI revision bot that reads Notion notes and converts them into spaced-repetition multiple-choice questions to reinforce studying.",
+    "techStack": ["Python", "Notion API", "Google Gemini"],
+    "category": "automation"
   },
   {
-    "title": "LeetCode Solutions",
-    "description": "Solution of all my leetcode attempted questions",
-    "fullDescription":
-      "LeetCode Solutions is a curated collection of my attempted problems on LeetCode, showcasing efficient solutions in Java, JavaScript, and Python.",
-    "imageUrl": "/leetcode.jpeg",
-    "techStack": ["Java", "JavaScript", "Python", "DSA"],
-    "githubUrl": "https://github.com/abdulmoiz248/LeetCode-Attempts",
-    "category": "dsa"
+    "title": "Joblyst",
+    "description": "Fully automated global job-hunting pipeline matched against your CV",
+    "fullDescription": "An automated job-hunting pipeline that sources roles worldwide via ATS APIs (Greenhouse, Lever, Ashby) and Firecrawl-based extraction, filters out stale/expired postings, scores matches against a CV using hybrid embedding + keyword scoring, and delivers only fresh, relevant matches to Discord daily via GitHub Actions.",
+    "techStack": ["Python", "Sentence Transformers", "Firecrawl", "GitHub Actions"],
+    "githubUrl": "https://github.com/abdulmoiz248/Joblyst",
+    "category": "automation"
   },
+  {
+    "title": "Scenario Lab",
+    "description": "AI-driven simulation engine that spins up subagents to model outcomes",
+    "fullDescription": "An AI-driven simulation engine that spins up multiple subagents to model different outcomes for a given scenario, comparing their trajectories.",
+    "techStack": ["Python", "PyTorch", "LangChain"],
+    "category": "ai"
+  },
+  {
+    "title": "SubSignal",
+    "description": "AI startup-idea scanner that mines Reddit and ranks the best ideas to Discord",
+    "fullDescription": "An AI-powered startup-idea scanner that mines relevant subreddits for pain points and ideas, ranks them by opportunity signal, and pushes the best ones to Discord.",
+    "techStack": ["Python", "GROQ API", "Gemini API"],
+    "category": "automation"
+  },
+  {
+  "title": "Updates Bot",
+  "description": "AI-Powered Discord Update Automation",
+  "fullDescription":
+    "Updates Bot is a Discord automation tool I built to streamline daily internship updates. Instead of manually formatting messages, you can drop your raw update and the bot leverages Gemini AI to craft a perfectly formatted post. Additionally, it stores your GitHub access token securely and automatically reads your daily git commit messages at 7 AM, sending them as updates to the designated Discord channel. Currently deployed on Vercel, the bot is built for efficiency, automation, and stress-free daily reporting.",
+  "imageUrl": "/updates-bot.png",
+  "techStack": ["Next.js", "Vercel", "Gemini AI", "Supabase", "TypeScript"],
+  "githubUrl": "https://github.com/abdulmoiz248/updates-bot",
+  "deployedUrl": "https://updates-bot.vercel.app/",
+  "category": "ai"
+},
   {
   "title": "GPTWrapped",
   "description": "ChatGPT Year in Review",
@@ -204,6 +334,13 @@
   "deployedUrl": "https://gpt-wrap.vercel.app/",
   "category": "web"
 },
+  {
+    "title": "Partial Cross-Entropy Segmentation",
+    "description": "Research notebook on point-supervised segmentation with a U-Net",
+    "fullDescription": "A research notebook exploring point-supervised image segmentation using a partial cross-entropy loss with a U-Net architecture.",
+    "techStack": ["Python", "PyTorch", "U-Net"],
+    "category": "ml"
+  },
   {
     "title": "Docgent",
     "description": "Smart document generator for assignments, reports, and invoices",
@@ -225,66 +362,23 @@
     "category": "web"
   },
   {
-  
-  "title": "Updates Bot",
-  "description": "AI-Powered Discord Update Automation",
-  "fullDescription":
-    "Updates Bot is a Discord automation tool I built to streamline daily internship updates. Instead of manually formatting messages, you can drop your raw update and the bot leverages Gemini AI to craft a perfectly formatted post. Additionally, it stores your GitHub access token securely and automatically reads your daily git commit messages at 7 AM, sending them as updates to the designated Discord channel. Currently deployed on Vercel, the bot is built for efficiency, automation, and stress-free daily reporting.",
-  "imageUrl": "/updates-bot.png",
-  "techStack": ["Next.js", "Vercel", "Gemini AI", "Supabase", "TypeScript"],
-  "githubUrl": "https://github.com/abdulmoiz248/updates-bot",
-  "deployedUrl": "https://updates-bot.vercel.app/",
-  "category": "ai"
-},
-
-  {
-    "title": "Twiiter Clone",
-    "description": "DSA Semester Project implementing various data structures",
+    "title": "Github-Agent",
+    "description": "AI Agents that generate and push readme files for my repos",
     "fullDescription":
-      "User IDs via linked list, tweets via queue, notifications via stack, file handling for persistence.",
-    "imageUrl": "/twiiter.png",
-    "techStack": ["Java", "JavaFx"],
-    "githubUrl": "https://github.com/abdulmoiz248/Twitter-clone?tab=readme-ov-file#twitter-clone-project",
-    "category": "dsa"
-  },
-  {
-    "title": "FOOBER",
-    "description": "Your Food, Your Way, Your Ride!!",
-    "fullDescription":
-      "Integrated food ordering with rider pickup to dine-in experience.",
-    "imageUrl": "/Foober.jpeg",
-    "techStack": ["Java", "Javafx", "DSA", "OOP"],
-    "githubUrl": "https://github.com/abdulmoiz248/FOOBER",
+      "An intelligent AI-powered agent designed to analyze GitHub repositories and streamline project management. It automatically detects the tech stack and core functionality of any project, generates a detailed README.md file, and publishes it on GitHub. The agent simplifies documentation, ensures consistency across projects, and saves developers significant time.",
+    "imageUrl": "/agent.png",
+    "techStack": ["NextJs", "React", "TypeScript", "Gemini Api"],
+    "githubUrl": "https://github.com/abdulmoiz248/Github-Agent",
     "category": "web"
   },
   {
-    "title": "GPT Emailer Extension",
-    "description": "A Chrome Extension that generates and send emails using chatgpt website",
-    "fullDescription":
-      "Generate and send context-aware emails via Gmail using ChatGPT.",
-    "imageUrl": "/gpt-email.png",
-    "techStack": ["React", "TypeScript", "TailwindCSS", "Next.js", "Nodemailer"],
-    "githubUrl": "https://github.com/abdulmoiz248/Gpt-Emailer-Extension",
-    "category": "web"
-  },
-  {
-    "title": "Nexa Link",
-    "description": "A Chatting App",
-    "fullDescription":
-      "Real-time messaging and group chats.",
-    "imageUrl": "/nexalink.png",
-    "techStack": ["React", "TypeScript", "TailwindCSS", "Next.js", "NestJs", "Socket.io"],
-    "githubUrl": "https://github.com/abdulmoiz248/NexaLink-Frontend",
-    "category": "web"
-  },
-  {
-    "title": "Finance Flow Pro",
-    "description": "A vibe coded full-stack personal finance app with dashboards, invoices & goal tracking",
-    "fullDescription":
-      "Dashboards, summaries, invoice gen, and goals with dark/light modes.",
-    "imageUrl": "/finance.png",
-    "techStack": ["Next.js", "TypeScript", "Tailwind", "Vercel AI SDK", "MongoDB"],
-    "githubUrl": "https://github.com/abdulmoiz248/Finance-Flow-Pro",
+    "title": "PDF Quiz App",
+    "description": "Ask MCQs from your own PDFs and get instant answers",
+    "fullDescription" :
+      "Frontend in Next.js, backend in Python using document QA.",
+    "imageUrl": "/quiz-app.png",
+    "techStack": ["Next.js", "Tailwind", "Python", "HuggingFace"],
+    "githubUrl": "https://github.com/abdulmoiz248/Quiz-App",
     "category": "web"
   },
   {
@@ -298,14 +392,56 @@
     "category": "ml"
   },
   {
-    "title": "PDF Quiz App",
-    "description": "Ask MCQs from your own PDFs and get instant answers",
-    "fullDescription" :
-      "Frontend in Next.js, backend in Python using document QA.",
-    "imageUrl": "/quiz-app.png",
-    "techStack": ["Next.js", "Tailwind", "Python", "HuggingFace"],
-    "githubUrl": "https://github.com/abdulmoiz248/Quiz-App",
-    "category": "web"
+    "title": "Acne Detection",
+    "description": "Computer vision pipeline that identifies and classifies acne lesions",
+    "fullDescription": "A computer vision pipeline that detects and classifies acne lesions from facial images.",
+    "techStack": ["Python", "PyTorch", "OpenCV"],
+    "category": "ml"
+  },
+  {
+    "title": "Dental Detection",
+    "description": "Computer vision pipeline that identifies dental issues from X-rays",
+    "fullDescription": "A computer vision pipeline that identifies and classifies dental issues from X-ray images.",
+    "techStack": ["Python", "PyTorch", "OpenCV"],
+    "category": "ml"
+  },
+  {
+    "title": "Customer Churn Prediction",
+    "description": "Neural network that predicts which customers are about to leave",
+    "fullDescription": "A neural network trained on customer usage data to predict which customers are likely to churn.",
+    "techStack": ["Python", "PyTorch", "Neural Networks"],
+    "category": "ml"
+  },
+  {
+    "title": "Fashion MNIST Classification",
+    "description": "Deep learning classifier for the Fashion MNIST dataset",
+    "fullDescription": "A deep learning image classifier trained and evaluated on the Fashion MNIST dataset.",
+    "techStack": ["Python", "PyTorch", "OpenCV"],
+    "category": "ml"
+  },
+  {
+    "title": "Question Answering System",
+    "description": "NLP pipeline that answers user queries using an LSTM model",
+    "fullDescription": "An NLP pipeline built around an LSTM model that answers user queries based on a trained corpus.",
+    "techStack": ["Python", "PyTorch", "LSTM"],
+    "category": "ml"
+  },
+  {
+    "title": "Next Word Prediction",
+    "description": "LSTM language model that predicts the next word in a sequence",
+    "fullDescription": "An LSTM-based language model trained to predict the next word in a sequence of text.",
+    "techStack": ["Python", "PyTorch", "LSTM"],
+    "category": "ml"
+  },
+  {
+    "title": "LeetCode Solutions",
+    "description": "Solution of all my leetcode attempted questions",
+    "fullDescription":
+      "LeetCode Solutions is a curated collection of my attempted problems on LeetCode, showcasing efficient solutions in Java, JavaScript, and Python.",
+    "imageUrl": "/leetcode.jpeg",
+    "techStack": ["Java", "JavaScript", "Python", "DSA"],
+    "githubUrl": "https://github.com/abdulmoiz248/LeetCode-Attempts",
+    "category": "dsa"
   },
   {
     "title": "COMSATS CGPA Calculator",
@@ -336,6 +472,77 @@
     "imageUrl": "/bake-bot.png",
     "techStack": ["React", "Express.js", "Langchain", "JavaScript"],
     "githubUrl": "https://github.com/abdulmoiz248/Bake-Bot",
+    "category": "web"
+  },
+  {
+    "title": "Twiiter Clone",
+    "description": "DSA Semester Project implementing various data structures",
+    "fullDescription":
+      "User IDs via linked list, tweets via queue, notifications via stack, file handling for persistence.",
+    "imageUrl": "/twiiter.png",
+    "techStack": ["Java", "JavaFx"],
+    "githubUrl": "https://github.com/abdulmoiz248/Twitter-clone?tab=readme-ov-file#twitter-clone-project",
+    "category": "dsa"
+  },
+  {
+    "title": "FOOBER",
+    "description": "Your Food, Your Way, Your Ride!!",
+    "fullDescription":
+      "Integrated food ordering with rider pickup to dine-in experience.",
+    "imageUrl": "/Foober.jpeg",
+    "techStack": ["Java", "Javafx", "DSA", "OOP"],
+    "githubUrl": "https://github.com/abdulmoiz248/FOOBER",
+    "category": "web"
+  },
+  {
+    "title": "Cui Skill Bank",
+    "description": "Console app that matches employees by complementary skills",
+    "fullDescription": "A console application that matches employees with complementary skill sets for cross-team collaboration.",
+    "techStack": ["Java", "OOP"],
+    "category": "dsa"
+  },
+  {
+    "title": "BMI Calculator with JavaFX",
+    "description": "Application tracking body mass index with historical data and categories",
+    "fullDescription": "A JavaFX application that tracks BMI over time, storing historical data and categorizing results.",
+    "techStack": ["Java", "JavaFX", "File Handling"],
+    "category": "web"
+  },
+  {
+    "title": "Careem Backend System",
+    "description": "C++ backend simulating core ride-hailing logic end-to-end",
+    "fullDescription": "A C++ backend system simulating core ride-hailing logic end-to-end, including trip matching and file-based persistence.",
+    "techStack": ["C++", "File Handling"],
+    "category": "web"
+  },
+  {
+    "title": "GPT Emailer Extension",
+    "description": "A Chrome Extension that generates and send emails using chatgpt website",
+    "fullDescription":
+      "Generate and send context-aware emails via Gmail using ChatGPT.",
+    "imageUrl": "/gpt-email.png",
+    "techStack": ["React", "TypeScript", "TailwindCSS", "Next.js", "Nodemailer"],
+    "githubUrl": "https://github.com/abdulmoiz248/Gpt-Emailer-Extension",
+    "category": "web"
+  },
+  {
+    "title": "Nexa Link",
+    "description": "A Chatting App",
+    "fullDescription":
+      "Real-time messaging and group chats.",
+    "imageUrl": "/nexalink.png",
+    "techStack": ["React", "TypeScript", "TailwindCSS", "Next.js", "NestJs", "Socket.io"],
+    "githubUrl": "https://github.com/abdulmoiz248/NexaLink-Frontend",
+    "category": "web"
+  },
+  {
+    "title": "Finance Flow Pro",
+    "description": "A vibe coded full-stack personal finance app with dashboards, invoices & goal tracking",
+    "fullDescription":
+      "Dashboards, summaries, invoice gen, and goals with dark/light modes.",
+    "imageUrl": "/finance.png",
+    "techStack": ["Next.js", "TypeScript", "Tailwind", "Vercel AI SDK", "MongoDB"],
+    "githubUrl": "https://github.com/abdulmoiz248/Finance-Flow-Pro",
     "category": "web"
   },
   {
@@ -377,6 +584,10 @@
     "AI Hackathon Participant - PF-PuCon'25"
   ],
   "achievements": [
-    "LeetCode 280+ Problems Solved"
+    "LeetCode 280+ Problems Solved",
+    "100K+ lines of code written",
+    "15+ projects shipped",
+    "10+ automations built",
+    "Hackathon wins - Devathon, Decathon"
   ]
 }
